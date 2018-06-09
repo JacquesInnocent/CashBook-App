@@ -1,0 +1,44 @@
+.main{
+	border: 1px solid white;
+	border-radius: 10px;
+	height: 400px;
+	width: 450px;
+    text-align: center;
+    margin: 100px 0 0 150px;
+    position: absolute;
+    background-color: #fff;
+}
+body{
+	background-image: url('back.jpg');
+	background-size: cover;
+	font-family: Gudea;
+}
+.thing{
+	height: 35px;
+	width: 75%;
+	border-radius: 25px;
+	border: 2px solid;
+	border-color: #6dff60;
+	text-align: center;
+	font-size: 20px;
+}
+button{
+	padding: 5px 45px;
+	border: none;
+    background-color: #15ff00;
+    color: #fff;
+    border-radius: 16px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.checkbox{
+	cursor: pointer;
+	padding-left: -5px;
+}
+.fleak{
+	font-family: Roboto;
+	font-size: 45px;
+	color: #15ff00;
+}
+#ehh{
+	margin-right: 5px;}

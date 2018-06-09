@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bio data form</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+</style>
+</head>
+<body>
+<center>
+<h2><b>BIO-DATA FORM</b></h2>
+</center>
+<form name="registration" enctype="multipart/form-data" method="post" action="processbio.php" onSubmit="return formValidation()";>
+
+ 
+
+  <div class="container">
+    
+        <label for="reference"><b>Reference no:<b></label>
+        <input type="text" name="referenceno" size ="10" required autofocus/><br/><br/>
+        <label for="name"><b>First name:<b></label>
+        <input type="text" name="firstname" id="firstname" name="first" size="20" required /><br/><br/>
+        <label for="name"><b>Last name:<b></label>
+        <input type="text" name="lastname" id="lastname" name="first" size="20" required />
+        <label for="dob">Date of Birth:</label>
+		<input type="text" name="dob" id="dob" pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy-mm-dd" required />
+		<label for="Address">Address:</label>
+		<input type="text" name="address" id="address" size="20" required/></br></br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" size="20" required/>
+		<label for="Gender">Gender:</label>
+		<input type="text" name="gender" id="gender" required/></br></br>
+		<label for="nationality">Nationality:</label>
+		<input type="text" name="nationality" id="nationality" required/ ></br></br>
+		<label for="birthcertificate">Birthcertificate:</label>
+		<input type="file" name="birthcertificate" id="birthcertificate" required/>
+		<label for="passportphoto">Passportphoto:</label>
+		<input type="file" name="passportphoto" id="passportphoto" required/><br>
+		<br>
+		<label for="dor">District of Origin:</label>
+		<input type="text" name="dor" id="dor" required/>
+        <p><strong>Parent's Information</strong></p>
+        <label for="Parents' name">Name:</label>
+        <input type="text" name="parentname" id="parentname" required/>
+        <label for="parentoccupation">Occupation:</label>
+        <input type="text" name="occupation" id="occupation" required/>
+        <label for="parentcontact">Contact</label>
+        <input type="text" name="contact" id="contact" required/>
+    <button type="submit" name="submit">Register</button>
+     
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+ 
+  </div>
+</form>
+
+ <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> 
+
+</body>
+</html>

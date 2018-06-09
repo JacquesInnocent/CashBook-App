@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cash</title>
+	<link rel="stylesheet" type="text/css" href="cash.css">
+	<link href="https://fonts.googleapis.com/css?family=Gudea|Roboto:700" rel="stylesheet"> 
+</head>
+<body>
+	<div class="new">
+		<form action="cash.php" method="post">
+			<h1>Cash In</h1>
+			<p>
+				<input class="thing " type="text" name="Items" placeholder="Item(s)">
+			</p>
+			<p>
+				<input class="thing " type="text" name="Activity" placeholder="Activity">
+			</p>
+			<p>
+				<input class="thing " type="text" name="Description" placeholder="Description">
+			</p>
+			<p>
+				<input class="thing " type="text" name="Amount" placeholder="Amount">
+			</p>
+			<button type="submit">Submit</button>
+		</form><br>
+		<span>
+			<a href="cashout.html"><button>Cash Out</button></a>
+			<a href="report.php"><button>Report</button></a>
+		</span>	<br><br>
+		<a href="logout.php"><button class="red">Logout</button></a>
+	</div>
+</body>
+</html>
